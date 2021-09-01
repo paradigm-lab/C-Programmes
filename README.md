@@ -1,2 +1,2 @@
 # shape_calc
-Calculate the area if the shape 
+Calculate the area for the shape 
