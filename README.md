@@ -1,4 +1,4 @@
 # C Programmes 
-Calculate the area for the shape 
+Calculate the area of the rectangle -> "rectangle.c"
 
-Sum of the arry
+Sum of two array and store the sum in third array -> "array_sum.c"
