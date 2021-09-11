@@ -47,7 +47,7 @@ struct manager salary()
 
 	struct manager m1;	
 	printf("What is your name: ");
-	scanf("%s", m1.name);
+	scanf("%s", &m1.name);
 
 	printf("What is your age: ");
 	scanf("%d", &m1.age);
