@@ -16,7 +16,7 @@ int main() {
 	celc = lower;
 
 	while (celc <= upper) {
-		fahr = 5 * (celc + 32) / 9;
+		fahr = 9 * (celc + 32) / 5;
 		printf("%d \t %d \n", celc, fahr);
 		celc = step + celc;
 	}
