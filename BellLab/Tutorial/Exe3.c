@@ -4,6 +4,7 @@ int main() {
 	//Calculating the fahrenhite and celcius from 0 to 300 and making 20 steps 
 
 	//Calculation the fahrenhite
+	printf("\tTemperature Convertion from Celcius to Fahrenhit.\n");
 	int fahr = 0;
 	int celc = 0;
 	int lower, upper, step;
