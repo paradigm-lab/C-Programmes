@@ -14,13 +14,22 @@ int main() {
 	} while (c != EOF);
 	printf("%d", nc);
 	*/
-
+	
+	/*
 	//Using the While loop to count the charactes
 	while((c = getchar()) != EOF) {
 		nc++;
 		//Using the unformated output to print the character in the terminal
 		//putchar(c);
 	}	
+	printf("\n");
+	printf("%d", nc);
+	*/
+
+	//Using the for loop to count the characters inputed by the user at the runntime of the program 
+	for (; (c = getchar()) != EOF; ) {
+		nc++;
+	}
 	printf("\n");
 	printf("%d", nc);
 }
