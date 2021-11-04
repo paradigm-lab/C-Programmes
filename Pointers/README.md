@@ -24,4 +24,3 @@ sizeof pointer is 2 byte for 32 bits machine and 4 byte for 64 bits machine.
 	ptr = &x;   -> Not Correct because the pointer is declared as int so it stores the address of an integer variable  
 	ptr = &a;  -> Correct, Because a is an interger and ptr is a pointer that stores the address of an interger variable
 	
-
