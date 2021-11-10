@@ -71,7 +71,7 @@ int main() {
 	printf("%d \n", p);
 	printf("%d \n", q);
 	printf("%d", d);
-	*/
+	
 
 
 	//Incrementation and Decrementation of the pointers
@@ -107,7 +107,35 @@ int main() {
 	//This Expression will not increment the pointer but it will the value inside the address
 	printf("%d\n", ++(*p));
 	printf("%d", ++(*p));
+	*/
 
+	//Problems on Pointers Important Question 
+	int a[] = {10, 11, -1, 56, 67, 5, 4};
+	int *p, *q;
+	p = a;
 
+	//Printing the value at the address p
+	printf("%d \n", *p);
+	
+	//The argument of the printf have got the same presedence so we check for the Associativity
+	//So the associativity is from right to left
+	printf("%d \t %d \t %d \t %d \n", *p, (*p)++, *p++, *++p);
+	
+	//q is a pointer and when we add a pointer with an integer we get a pointer back so q will store the address that will be returned after taking p + 3
+	q = p + 3;
+	printf("%d \n", *q);
+	
+	//This will return an integer and not a pointer,
+	//Because the indirectional operator has got high presedence so the value at address *q minize three will be returned
+	printf("%d \n", *q - 3);
+
+	//We first check for the presedence and associativity
+	//So indirectional and decrement operator have the same precedence so that means we check for the associativity which is from right to left this will return an integer	
+	printf("%d \n", *--p + 5);
+
+	//The astric or indirectional operators have got the high presedence 
+	//So we can do left to right or right to left
+	printf("%d \n", *p + *q);
+	
 	
 }
