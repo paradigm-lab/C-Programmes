@@ -20,7 +20,7 @@ int main() {
 	p = p+1;
 	*p = 2;
 	printf("%d", *p);
-	*/
+	
 
 
 	//Subtraction in Pointer
@@ -71,6 +71,43 @@ int main() {
 	printf("%d \n", p);
 	printf("%d \n", q);
 	printf("%d", d);
+	*/
+
+
+	//Incrementation and Decrementation of the pointers
+	//a is contating the base address of the array so this means a is a Constant pointer 
+	//Your cannot assign an address at the constant pointer
+	printf("\t \t Incrementation of the pointers \n \n");
+	int a[] = {3, 2, 6, 7, 0, 56};
+	int *p;
+	p = a;
+	p++;
+	printf("%d\n", *p);
+
+	//Post increment : return the value then incrementation will take place
+	printf("%d\n", *p++);
+	printf("%d\n", *p);
+	
+	//Pre increment : It will modify the value then it will return the modified value
+	//* and ++ They have the same presedence so the associativity is Right to left
+	printf("%d\n", *++p);
+
+	//They have the same presedence so we check for the associativity
+	//Associativity is from Right to Left, 7 and 0
+	printf("%d %d \n", *p++, *p++);
+	printf("%d \n \n", *p);
+	
+	printf("\t \t Decrementation of the pointers \n \n");
+
+	printf("%d \n", *p--);
+	printf("%d \n", *p);
+
+	printf("%d \t %d \t %d \n", *--p, *--p, *--p);
+	
+	//This Expression will not increment the pointer but it will the value inside the address
+	printf("%d\n", ++(*p));
+	printf("%d", ++(*p));
+
 
 	
 }
