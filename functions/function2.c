@@ -11,6 +11,8 @@ void sumArg(int, int);
 int main() {
 	sum();		// Function Calling
 	sumArg(3, 4);
+	char ch = fun();
+	printf("%c", ch);
 	return 0;
 }
 
@@ -30,6 +32,13 @@ void sumArg(int a, int b){		// function Definition
 	int sum = 0;
 	sum = a + b;
 	printf("Argument Sum: %d \n", sum);
+}
+
+// Function with a return type 
+char fun() {
+	char c;
+	scanf("%c", &c);
+	return c;
 }
 
 /*Function declaration
