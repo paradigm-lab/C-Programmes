@@ -45,7 +45,7 @@ void sumArg(int a, int b){		// function Definition
 char fun() {
 	char c;
 	scanf("%c", &c);
-	return c;
+	return 'c';
 }
 
 /*Function declaration
