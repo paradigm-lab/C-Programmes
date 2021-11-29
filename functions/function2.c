@@ -8,11 +8,15 @@
 
 void sum(void);			// Function Declaration or Function Prototype
 void sumArg(int, int);
+char fun();
+
+
 int main() {
-	sum();		// Function Calling
-	sumArg(3, 4);
-	char ch = fun();
-	printf("%c", ch);
+	//sum();		// Function Calling
+	//sumArg(3, 4);
+	char ch; 
+	ch = fun();
+	printf("%c \n", ch);
 	return 0;
 }
 
