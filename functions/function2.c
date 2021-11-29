@@ -6,6 +6,9 @@
 // When we don't write the function declaration the compiler will implicit declaration of the function and it always will assume the return type is integer.
 // We should only write void in the declaration of the function and not in the function definition
 
+// We also need to define the function as global so that any function call the function on the prototype or function declaration
+// We can also declare the function in the main function but it will only be used in the main scope
+
 void sum(void);			// Function Declaration or Function Prototype
 void sumArg(int, int);
 char fun();
