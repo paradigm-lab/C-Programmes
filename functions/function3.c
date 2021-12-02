@@ -13,7 +13,12 @@ int main() {
 	/*Function calling 
 	 * When function is called then the control goes to the function definition and it 
 	 * compaies the function definition and the funtion calling
+	 * 
+	 * Argument are the values passed in the function.
+	 * Arguments are also called Actualle parameter
 	 *
+	 * Parameter are used when the function are defined or declared.
+	 * Perameter are also called: Formal parameter
 	 */
 
 	sum();
